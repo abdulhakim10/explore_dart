@@ -14,6 +14,11 @@ void main() {
 //   print(greeting);
 
   nullFun();
+
+  final stuff = printStaff();
+
+  print(stuff.age);
+  print(stuff.name);
 }
 
 void nPName(
@@ -28,6 +33,13 @@ void nPName(
 String? nullFun() {
   return null;
 }
+
+({int? age, String name}) printStaff() {
+  return (age: 22, name: 'Tusar');
+}
+
+// arrow function
+void nStuff() => print('hi');
 
 /*
  datatype fnName () {
