@@ -9,8 +9,25 @@ void main() {
 
 //   cookie.shape = 'Rectangle';
 //   print(cookie.shape);
+
+// Static Variables/functions
+  final constants = Constants();
+
+  print(Constants.greeting);
+  print(Constants.giveSomeValue());
 }
 
+class Constants {
+//   Static Variables
+  static int height = 10;
+  static String greeting = 'Hello All';
+  static String bye = 'bye!';
+
+//   Static Function
+  static int giveSomeValue() {
+    return height;
+  }
+}
 // Class
 
 class Cookie {
